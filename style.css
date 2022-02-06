@@ -642,3 +642,57 @@ padding:32px;
         margin-bottom: 44px;
     } 
 }
+
+/* end blog page style */
+
+
+/**********start contact page**********  */
+.location{
+    width:85%;
+    margin: 100px auto;
+}
+.location iframe{
+    width:100%;
+}
+
+.contact{
+    width:85%;
+    margin:100px auto;
+}
+.contact .contact-row{
+    display:flex;
+    justify-content:space-between;
+}
+.contact .contact-row .contact-col>div{
+    display:flex;
+    margin-bottom: 32px;
+    color:#495057;
+}
+.contact .contact-row .contact-col{
+    flex-basis: 48%;
+}
+.contact .contact-row .contact-col>div .fas{
+    font-size:20px;
+    color:#f44336;
+    padding:12px;
+}
+.contact .contact-row .contact-col h5{
+    font-size:16px;
+    font-weight:400;
+    line-height:1.4;
+}
+.contact .contact-row .contact-col p{
+    font-size:12px;
+}
+
+.contact .contact-row .contact-col form{
+    display: flex;
+    flex-direction: column;
+}
+.contact .contact-row .contact-col form input{
+    margin-bottom: 16px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/* *******end contact page*************** */
