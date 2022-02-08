@@ -424,10 +424,57 @@ nav .nav-links ul li a:hover::after{
     }
 }
 /* end testimonials section */
+/* start stats section */
+.stats{
+    background-color:#eee;
+    padding:24px;
+}
+.stats .stats-row{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height:300px;
+}
+.stats .stats-row .stats-col{
+    padding:24px;
+    background-color: white;
+    width: 200px;
+    height:150px;
+    margin:14px;
+    text-align: center;
+}
 
+.stats .stats-row .stats-col .fas{
+    color: #f44336;
+    font-size:25px;
+}
+.stats .stats-row .stats-col .num{
+    font-weight: 500;
+    font-size:24px;
+    padding: 12px;
+}
+.stats .stats-row .stats-col p{
+    color: #495057;
+    font-size:14px;
+}
+
+@media (max-width: 767px){
+    .stats .stats-row{
+        flex-direction: column;
+        height: auto;
+    }
+    .stats .stats-row .stats-col .num{
+        font-size:18px;
+        padding: 12px;
+    }
+    .stats .stats-row .stats-col p{
+        font-size:12px;
+    }
+}
+/* end stats section */
 /* start call to action section */
 .cta{
-    margin: 100px auto;
+    margin:auto;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('images/banner2.jpg');
     background-position:center;
     background-size: cover;
@@ -458,6 +505,7 @@ nav .nav-links ul li a:hover::after{
 
 /* start footer */
 .footer{
+    margin: 100px auto 0;
     padding:16px 32px;
     text-align:center;
 }
@@ -576,6 +624,7 @@ nav .nav-links ul li a:hover::after{
         padding:4px 8px;
     }
 }
+
 /* end about us section */
 
 

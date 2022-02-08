@@ -10,4 +10,31 @@ var links = document.getElementById('links');
         })
 
 
+// add counter to stats section
+
+let stats_section = document.querySelector('.stats');
+let nums = document.querySelectorAll('.num');
+
+// to trager the function one time only
+let started = false;
+
+window.onscroll=function(){
+    if(window.scrollY >= stats_section.offsetTop){
+        if(!started){
+            nums.forEach(num=> startCount(num));
+        }
+        started = true;
+    }
+}
+
+function startCount(elem){
+    let goal = elem.dataset.goal;
+    let counter = setInterval(()=>{
+        elem.innerText++;
+        if(elem.innerText == goal){
+        clearInterval(counter);
+    }
+    },(2000 / goal))
+    
+}
 
