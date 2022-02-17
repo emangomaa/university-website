@@ -83,6 +83,14 @@ nav .nav-links ul li a:hover::after{
     border-color:#f44336;
 
 }
+.scrollTop i{
+    color: #f44336;
+    font-size: 52px;
+    position: fixed;
+    top:85%;
+    right: 50px;
+    display:none;
+}
 @media (max-width:700px) {
     nav{
         padding:44px 32px;

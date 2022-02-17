@@ -10,8 +10,9 @@ var links = document.getElementById('links');
         })
 
 
-// add counter to stats section
 
+        
+// add counter to stats section
 let stats_section = document.querySelector('.stats');
 let nums = document.querySelectorAll('.num');
 
@@ -38,3 +39,21 @@ function startCount(elem){
     
 }
 
+// show to top arrow
+let toTopArrow = document.querySelector('.fad')
+let facilities_section = document.querySelector('.facilities')
+window.onscroll=function(){
+    if(window.scrollY >= facilities_section.offsetTop){
+        toTopArrow.style.display="block";
+    }
+    else{
+        toTopArrow.style.display="none";
+    }
+}
+// add event to toToArrow
+toTopArrow.addEventListener('click',function(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth",
+    })
+})//end ToTop event
