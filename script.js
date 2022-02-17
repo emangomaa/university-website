@@ -19,6 +19,10 @@ let nums = document.querySelectorAll('.num');
 // to trager the function one time only
 let started = false;
 
+// find toTOPArrow and facilities section
+let toTopArrow = document.querySelector('.fad');
+let facilities_section = document.querySelector('.facilities');
+
 window.onscroll=function(){
     if(window.scrollY >= stats_section.offsetTop){
         if(!started){
@@ -26,6 +30,15 @@ window.onscroll=function(){
         }
         started = true;
     }
+
+    // show to top arrow
+    if(window.scrollY >= facilities_section.offsetTop){
+        toTopArrow.style.display="block";  
+    }
+    else{
+        toTopArrow.style.display="none";
+    }
+    
 }
 
 function startCount(elem){
@@ -39,17 +52,6 @@ function startCount(elem){
     
 }
 
-// show to top arrow
-let toTopArrow = document.querySelector('.fad')
-let facilities_section = document.querySelector('.facilities')
-window.onscroll=function(){
-    if(window.scrollY >= facilities_section.offsetTop){
-        toTopArrow.style.display="block";
-    }
-    else{
-        toTopArrow.style.display="none";
-    }
-}
 // add event to toToArrow
 toTopArrow.addEventListener('click',function(){
     window.scrollTo({

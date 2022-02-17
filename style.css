@@ -91,6 +91,10 @@ nav .nav-links ul li a:hover::after{
     right: 50px;
     display:none;
 }
+.scrollTop i:hover{
+    cursor: pointer;
+    /* transform: translateY(-8px); */
+}
 @media (max-width:700px) {
     nav{
         padding:44px 32px;
